@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Test your knowledge of the U.S. Constitution with our interactive quiz">
+    <meta name="author" content="Your Name">
+    <title>Constitutional Quiz - ConstitutionCompass.org</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="/placeholder.svg?height=50&width=50" alt="Constitution Compass Logo" width="50" height="50">
+                <span>ConstitutionCompass.org</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bill-of-rights.html">Bill of Rights</a></li>
+                    <li><a href="landmark-cases.html">Landmark Cases</a></li>
+                    <li><a href="quiz.html" class="active">Constitutional Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Constitutional Quiz</h1>
+        
+        <section id="quiz-intro" class="quiz-section">
+            <p>Test your knowledge of the U.S. Constitution with our interactive quiz. Good luck!</p>
+            <button id="start-quiz" class="cta-button">Start Quiz</button>
+        </section>
+
+        <section id="quiz-questions" class="quiz-section" style="display: none;">
+            <div id="question-container"></div>
+            <div id="answer-feedback" class="feedback" style="display: none;"></div>
+            <button id="next-question" class="cta-button" style="display: none;">Next Question</button>
+        </section>
+
+        <section id="quiz-results" class="quiz-section" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p>You scored: <span id="score"></span> out of <span id="total-questions"></span></p>
+            <div id="score-breakdown"></div>
+            <button id="retry-quiz" class="cta-button">Try Again</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bill-of-rights.html">Bill of Rights</a></li>
+                    <li><a href="landmark-cases.html">Landmark Cases</a></li>
+                    <li><a href="quiz.html">Constitutional Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="glossary.html">Legal Glossary</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ConstitutionCompass.org is dedicated to providing accessible and comprehensive information about U.S. Constitutional Law.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> ConstitutionCompass.org. All rights reserved.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
+

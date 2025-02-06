@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Explore U.S. Constitutional Law, Bill of Rights, and landmark Supreme Court cases at ConstitutionCompass.org - Your comprehensive guide to understanding American constitutional principles">
+    <meta name="author" content="Your Name">
+    <title>ConstitutionCompass.org - Your Guide to U.S. Constitutional Law</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="/placeholder.svg?height=50&width=50" alt="Constitution Compass Logo" width="50" height="50">
+                <span>ConstitutionCompass.org</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="bill-of-rights.html">Bill of Rights</a></li>
+                    <li><a href="landmark-cases.html">Landmark Cases</a></li>
+                    <li><a href="quiz.html">Constitutional Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Understanding the U.S. Constitution</h1>
+                <p>Your comprehensive guide to constitutional law, rights, and landmark decisions</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+            <img 
+                src="/placeholder.svg?height=600&width=1200" 
+                alt="United States Constitution document" 
+                class="hero-image"
+                width="1200"
+                height="600"
+                loading="lazy"
+            >
+        </section>
+
+        <section id="learn-more" class="features">
+            <h2>Explore Constitutional Law</h2>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Bill of Rights document" width="300" height="200" loading="lazy">
+                    <h3>Bill of Rights</h3>
+                    <p>Discover the first ten amendments and their impact on American civil liberties.</p>
+                    <a href="bill-of-rights.html" class="learn-more-link">Learn More →</a>
+                </article>
+
+                <article class="feature-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Supreme Court building" width="300" height="200" loading="lazy">
+                    <h3>Landmark Cases</h3>
+                    <p>Explore the Supreme Court decisions that shaped constitutional interpretation.</p>
+                    <a href="landmark-cases.html" class="learn-more-link">Learn More →</a>
+                </article>
+
+                <article class="feature-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Constitutional Quiz" width="300" height="200" loading="lazy">
+                    <h3>Test Your Knowledge</h3>
+                    <p>Challenge yourself with our interactive constitutional law quiz.</p>
+                    <a href="quiz.html" class="learn-more-link">Start Quiz →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <h2>Constitutional Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-event">
+                    <div class="date">1787</div>
+                    <div class="content">
+                        <h3>Constitutional Convention</h3>
+                        <p>Delegates meet in Philadelphia to draft the Constitution</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="date">1788</div>
+                    <div class="content">
+                        <h3>Ratification</h3>
+                        <p>The Constitution is ratified by nine states</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="date">1791</div>
+                    <div class="content">
+                        <h3>Bill of Rights</h3>
+                        <p>The first ten amendments are ratified</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest constitutional law updates and resources.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bill-of-rights.html">Bill of Rights</a></li>
+                    <li><a href="landmark-cases.html">Landmark Cases</a></li>
+                    <li><a href="quiz.html">Constitutional Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="glossary.html">Legal Glossary</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ConstitutionCompass.org is dedicated to providing accessible and comprehensive information about U.S. Constitutional Law.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> ConstitutionCompass.org. All rights reserved.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
+
