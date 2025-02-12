@@ -11,7 +11,6 @@
   --transition-speed: 0.3s;
 }
 
-/* Reset and base styles */
 *,
 *::before,
 *::after {
@@ -31,7 +30,6 @@ body {
   background-color: var(--background-color);
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -54,7 +52,7 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* Header styles */
+
 header {
   background-color: var(--primary-color);
   padding: 1rem;
@@ -109,14 +107,13 @@ nav a.active {
   background-color: var(--secondary-color);
 }
 
-/* Main content */
+
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* Hero section */
 .hero {
   position: relative;
   margin-bottom: 4rem;
@@ -144,7 +141,6 @@ main {
   object-fit: cover;
 }
 
-/* Feature grid */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -172,7 +168,7 @@ main {
   margin-bottom: 1rem;
 }
 
-/* Timeline */
+
 .timeline-container {
   position: relative;
   padding: 2rem 0;
@@ -201,7 +197,7 @@ main {
   color: var(--primary-color);
 }
 
-/* Forms */
+
 .form-group {
   margin-bottom: 1rem;
 }
@@ -279,7 +275,7 @@ footer {
   text-align: center;
 }
 
-/* Responsive design */
+
 @media screen and (max-width: 768px) {
   header {
     padding: 1rem;
@@ -323,7 +319,7 @@ footer {
   }
 }
 
-/* Accessibility */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -336,7 +332,7 @@ footer {
   border: 0;
 }
 
-/* Animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -352,7 +348,7 @@ footer {
   animation: fadeIn 0.5s ease forwards;
 }
 
-/* Amendment cards */
+
 .amendment-card {
   background-color: white;
   border-radius: 8px;
@@ -371,7 +367,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* Case cards */
+
 .case-card {
   background-color: white;
   border-radius: 8px;
@@ -390,7 +386,7 @@ footer {
   margin-top: 1rem;
 }
 
-/* Filter controls */
+
 .filter-controls {
   display: flex;
   gap: 1rem;
@@ -401,7 +397,7 @@ footer {
   flex: 1;
 }
 
-/* Newsletter form */
+
 .newsletter-form {
   max-width: 500px;
   margin: 0 auto;
@@ -412,7 +408,6 @@ footer {
   margin-top: 1rem;
 }
 
-/* Interactive feature */
 .amendment-explorer {
   background-color: white;
   border-radius: 8px;
@@ -431,7 +426,7 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-/* Success message */
+
 .success-message {
   background-color: #4caf50;
   color: white;
@@ -441,7 +436,7 @@ footer {
   text-align: center;
 }
 
-/* Quiz styles */
+
 .quiz-section {
   background-color: white;
   border-radius: 8px;

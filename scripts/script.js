@@ -1,4 +1,3 @@
-// Constants
 const AMENDMENTS = [
   {
     number: 1,
@@ -149,14 +148,14 @@ const LANDMARK_CASES = [
   },
 ]
 
-// DOM Elements
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize all pages
+  
   updateFooterDates()
   setupNavigation()
   initializeLazyLoading()
 
-  // Page-specific initialization
+
   if (document.getElementById("amendments-list")) {
     initializeAmendments()
   }
@@ -167,18 +166,17 @@ document.addEventListener("DOMContentLoaded", () => {
     setupNewsletterForm()
   }
 
-  // Initialize quiz if on quiz page
+
   const startQuizButton = document.getElementById("start-quiz")
   if (startQuizButton) {
     startQuizButton.addEventListener("click", () => {
-      // Store quiz start time in localStorage
       localStorage.setItem("quizStartTime", new Date().toISOString())
       window.location.href = "quiz.html"
     })
   }
 })
 
-// Footer date information
+
 function updateFooterDates() {
   const yearSpan = document.getElementById("currentYear")
   const lastModifiedSpan = document.getElementById("lastModified")
@@ -191,7 +189,6 @@ function updateFooterDates() {
   }
 }
 
-// Navigation
 function setupNavigation() {
   const currentPage = window.location.pathname.split("/").pop() || "index.html"
   const navLinks = document.querySelectorAll("nav a")
@@ -203,7 +200,7 @@ function setupNavigation() {
   })
 }
 
-// Lazy loading images
+
 function initializeLazyLoading() {
   if ("IntersectionObserver" in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -223,12 +220,12 @@ function initializeLazyLoading() {
   }
 }
 
-// Amendments page
+
 function initializeAmendments() {
   const amendmentSelect = document.getElementById("amendment-select")
 
   if (amendmentSelect) {
-    // Handle amendment selection
+
     amendmentSelect.addEventListener("change", (e) => {
       const selectedAmendment = AMENDMENTS.find((a) => a.number === Number.parseInt(e.target.value))
       const detailsDiv = document.getElementById("amendment-details")
@@ -244,7 +241,7 @@ function initializeAmendments() {
   }
 }
 
-// Landmark cases page
+
 function initializeLandmarkCases() {
   const casesGrid = document.getElementById("cases-grid")
   const eraFilter = document.getElementById("era-filter")
@@ -284,11 +281,11 @@ function initializeLandmarkCases() {
     topicFilter.addEventListener("change", filterCases)
   }
 
-  // Initial display
+
   displayCases(LANDMARK_CASES)
 }
 
-// Newsletter form
+
 function setupNewsletterForm() {
   const form = document.getElementById("newsletter-form")
 
@@ -297,7 +294,7 @@ function setupNewsletterForm() {
       e.preventDefault()
       const email = form.email.value
 
-      // Store subscription in localStorage
+
       const subscriptions = JSON.parse(localStorage.getItem("subscriptions") || "[]")
       subscriptions.push({
         email,
@@ -305,13 +302,13 @@ function setupNewsletterForm() {
       })
       localStorage.setItem("subscriptions", JSON.stringify(subscriptions))
 
-      // Show success message
+
       const successMessage = document.createElement("div")
       successMessage.className = "success-message animate-fade-in"
       successMessage.textContent = "Thank you for subscribing!"
       form.appendChild(successMessage)
 
-      // Reset form
+
       form.reset()
       setTimeout(() => successMessage.remove(), 3000)
     })
